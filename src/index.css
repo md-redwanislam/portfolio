@@ -7,3 +7,57 @@
 html {
   scroll-behavior: smooth;
 }
+
+.skill-glow-border {
+  --glow-width: 2px;
+
+  padding: var(--glow-width);
+  background: conic-gradient(
+    from var(--glow-angle, 0deg),
+    transparent 0deg,
+    transparent 230deg,
+    var(--skill-color) 280deg,
+    white 300deg,
+    var(--skill-color) 320deg,
+    transparent 360deg
+  );
+
+  filter: drop-shadow(0 0 4px var(--skill-color))
+    drop-shadow(0 0 10px var(--skill-color));
+
+  animation: skill-border-spin 2.5s linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@keyframes skill-border-spin {
+  from {
+    --glow-angle: 0deg;
+  }
+  to {
+    --glow-angle: 360deg;
+  }
+}
+
+@property --glow-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-glow-border {
+    animation: none;
+    background: var(--skill-color);
+    opacity: 0;
+  }
+
+  .group:hover .skill-glow-border,
+  .group:focus-within .skill-glow-border {
+    opacity: 0.8;
+  }
+}

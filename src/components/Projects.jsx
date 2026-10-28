@@ -3,21 +3,43 @@ import { getStaticFIle } from "../utility/staticFile";
 
 const dummyProjects = [
   {
+    name: "Deli Image Contest",
+    description:
+      "A modern, responsive photography contest platform where users can upload images, explore galleries, and engage with community submissions through a secure and intuitive interface.",
+    image: "Deli.png",
+    tools: ["Next.js", "React", "TailwindCSS", "NodeJS", "MySQL", "cloudinary"],
+    live: "https://deli-image-contest-frontend.vercel.app",
+    GitHub: "https://github.com/md-redwanislam/photo-event",
+    pdf: "",
+  },
+  {
+    name: "Deli Image Contest CMS Dashboard",
+    description:
+      "A secure, responsive admin dashboard for managing users, image submissions, contests, galleries, FAQs, and platform content with streamlined moderation and content management tools.",
+    image: "CMS_Deli.png",
+    tools: ["Next.js", "React", "TailwindCSS", "NodeJS", "MySQL", "cloudinary"],
+    live: "https://deli-image-contest-dashboard-blush.vercel.app/auth/login",
+    GitHub: "https://github.com/md-redwanislam/photo-event",
+    pdf: "",
+  },
+  {
     name: "Booknest",
-    description: "This is a sample project description.",
-    image: "booknest.jpg",
-    tools: ["React", "NodeJS", "MongoDB", "TailwindCSS"],
-    live: "https://booknest-virid.vercel.app/",
-    git: "https://github.com/GoodBoy-420/bookNest",
+    description:
+      "A full-stack MERN-based online bookstore that allows users to browse, search, and purchase books seamlessly with secure authentication and payment integration. BookNest focuses on delivering a smooth user experience with real-world e-commerce features like filtering, cart management and order processing.",
+    image: "booknest.png",
+    tools: ["React", "TailwindCSS", "NodeJS", "MongoDB"],
+    live: "https://booknest-virid.vercel.app",
+    GitHub: "https://github.com/md-redwanislam/bookNest",
     pdf: "",
   },
   {
     name: "Job Sphere",
     image: "jobsphere.jpg",
-    description: "This is a sample project description.",
-    tools: ["React", "NodeJS", "MongoDB", "Shadcn"],
-    live: "https://job-spherefrontend.vercel.app/",
-    git: "https://github.com/GoodBoy-420/jobportal",
+    description:
+      "A full-stack MERN-based job portal that connects applicants, recruiters and administrators through a role-based system. JobSphere enables applicants to search and apply for jobs, recruiters to manage job postings and applicants and admins to oversee platform activities with approval workflows.",
+    tools: ["React", "Shadcn", "TailwindCSS", "NodeJS", "MongoDB"],
+    live: "https://job-spherefrontend.vercel.app",
+    GitHub: "https://github.com/md-redwanislam/jobsphere",
     pdf: "",
   },
 ];
@@ -72,7 +94,7 @@ const Projects = () => {
                 <img src={getStaticFIle(project.image)} alt="booknest" />
               </div>
 
-              <div className="p-6">
+              <div className="p-6 m-2">
                 <h3 className="text-xl font-bold text-(--color-redwine)">
                   {project.name}
                 </h3>
@@ -105,7 +127,7 @@ const Projects = () => {
                     target="_blank"
                     className="hover:text-(--color-redwine) transition"
                   >
-                    Git
+                    GitHub
                   </a>
                   <a
                     href=""

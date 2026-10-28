@@ -6,7 +6,7 @@ import {
   FaPhone,
   FaWhatsapp,
 } from "react-icons/fa";
-import profile from "../assets/profile.png";
+import profile from "../assets/profile.jpeg";
 
 const fadeLeft = {
   hidden: { opacity: 0, x: -60 },
@@ -68,7 +68,7 @@ const Hero = () => {
             >
               <FaLinkedin />
             </a>
-            <a target="_blank" href="https://github.com/GoodBoy-420">
+            <a target="_blank" href="https://github.com/md-redwanislam">
               <FaGithub />
             </a>
           </div>

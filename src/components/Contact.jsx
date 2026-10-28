@@ -21,7 +21,7 @@ const Contact = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="space-y-4 text-lg"
         >
-          <p>Email: riadislam9117@gmail.com</p>
+          <p>Email: md.redwanislam9117@gmail.com</p>
           <p>Phone: +8801684560909</p>
           <p>Address: Adabor, Mohammadpur, Dhaka, Bangladesh</p>
         </motion.div>

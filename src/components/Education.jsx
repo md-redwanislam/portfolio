@@ -5,7 +5,7 @@ const education = [
     title: "Bachelor of Science (BSc)",
     department: "Computer Science and Engineering",
     institute: "BRAC University",
-    cgpa: 3.42,
+    cgpa: 3.44,
     year: 2026,
   },
   {
