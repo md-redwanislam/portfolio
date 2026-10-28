@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+    <section id="contact" className="py-20 px-6 bg-gray-50 dark:bg-black">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
